@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>I'm gonna to build my own pyramid!..</title>
+	<link rel="stylesheet" href="pyramid.css">
+</head>
+<body>
+	<header class='top-header'>
+		<h1 class='top-header-h1'>Pyramid Slide</h1>
+	</header>
+	<main>
+		<div class='pyramid-header'>
+			<form oninput="heightselected.value = heigth.valueAsNumber">
+				<label for="symbol">Brick Symbol:</label>
+				<select name="symbol" id="symbol">
+					<option value="#">#</option>
+					<option value="$">$</option>
+					<option value="X">X</option>
+					<option value="&">&</option>
+				</select>
+				
+				<label for="heigth">How hight?</label>
+				<input type="range" name="heigth" id="heigth" value="8" min="0" max="20">
+				<output name="heightselected">8</output>
+			</form>
+		</div>
+		<div class='pyramid-draw'>
+			<div id="construction">
+			</div>
+		</div>
+	</main>
+	
+	
+	<script src="pyramid.js"></script>
+</body>
+</html>
