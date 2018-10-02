@@ -54,3 +54,9 @@ output {
 	width: fit-content;
 	text-align: right;
 }
+.transparent {
+	opacity: 0;
+}
+p {
+	margin: 0;
+}
